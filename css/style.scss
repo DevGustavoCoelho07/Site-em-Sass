@@ -1,0 +1,52 @@
+
+@import 'colors';
+@import 'mixins';
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-main{
+
+    background-color: $laranja;
+    padding: 5px;
+    
+    
+
+    ul{
+       
+
+        @include tipografia(1.7em,2,$vermelho);
+    }
+    li{
+        display: inline;
+        margin: 0 60px;
+        list-style: none;
+
+        &:hover{
+            background-color: #fff;
+            padding: 40px 0px;
+        }
+    }
+}
+
+.img{
+    background: url("https://images.pexels.com/photos/6683572/pexels-photo-6683572.jpeg?cs=srgb&dl=pexels-brett-sayles-6683572.jpg&fm=jpg");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    @include centerI;
+    @include tipografia(1.7em,2,black);
+ 
+}
+
+.img-h{
+    margin: 0 auto;
+
+
+
+}

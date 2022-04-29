@@ -1,0 +1,19 @@
+
+@import 'colors';
+
+@mixin tipografia ($t,$v,$fc) {
+    @if $v == 1 {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }@else if $v == 2{
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+    }
+    font-size: $t;
+    color: $fc;
+}
+
+@mixin centerI(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
